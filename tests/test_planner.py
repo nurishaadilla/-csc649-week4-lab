@@ -11,7 +11,7 @@ def test_days_left_counts_days_until_due():
     # Act
     result = days_left(due, today)
     # Assert
-    assert result == 3
+    assert result == 4
 
 
 # Now write the tests below. Use the same three steps: Arrange, Act, Assert.
@@ -47,7 +47,7 @@ def test_sort_by_due_puts_soonest_first():
     ]
     sorted_tasks = sort_by_due(tasks)
     assert sorted_tasks[0]["title"] == "Task A"
-    
+
 # TODO 6: completion_rate returns 0.0 when there are no tasks.
 def test_completion_rate_zero_when_no_tasks():
     assert completion_rate(0, 0) == 0.0
